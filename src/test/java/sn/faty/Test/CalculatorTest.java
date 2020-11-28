@@ -36,7 +36,11 @@ public class CalculatorTest {
             Assert.assertEquals(800,diff);
 
         }
-
+    @Test
+    //La methode de test de la multiplication
+    public void testmultiply() {
+        Assert.assertEquals(4, calculator.multiply(2,2));
+    }
 
         @Test
         public void testdivide()

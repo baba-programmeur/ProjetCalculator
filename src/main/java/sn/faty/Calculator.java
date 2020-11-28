@@ -12,6 +12,7 @@ public class Calculator {
         return a - b;
     }
 
+
     public int divide(int a, int b) throws divisionParZero {
 
         if(b==0)
@@ -20,7 +21,10 @@ public class Calculator {
 
         return a / b;
     }
-
+    public static int multiply(int a, int b)
+    {
+        return a*b ;
+    }
     public static int min(int a, int b){
         return Math.min(a,b);
     }
