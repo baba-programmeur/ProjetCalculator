@@ -46,7 +46,42 @@ public class CalculatorTest {
             Assert.assertEquals(20,div);
 
         }
+    @Test
+    public void min() {
+        int min=calculator.min(10,20);
+        if (min !=10) Assert.fail();
+    }
+
+    @Test
+    public void max() {
+        int max=calculator.max(2000,-2000);
+        Assert.assertEquals(2000,max);
+
+
 
 
     }
+    @Test
+    public void minElement() {
+        int tab[]={
+                1,4,7,9
+        };
+        int a=calculator.minElement(tab);
+        Assert.assertEquals(1,a);
+
+    }
+
+    @Test
+    public void maxElement() {
+        int tab[]={
+                1,4,7,9
+        };
+        int a=calculator.maxElement (tab);
+        Assert.assertEquals(9,a);
+
+    }
+
+
+
+}
 
